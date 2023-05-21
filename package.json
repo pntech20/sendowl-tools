@@ -1,0 +1,31 @@
+{
+  "name": "s3-management",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/minio": "^7.0.11",
+    "@types/react-csv": "^1.1.2",
+    "axios": "^1.4.0",
+    "minio": "^7.0.25",
+    "next": "12.0.7",
+    "rc-table": "^7.21.0",
+    "react": "17.0.2",
+    "react-csv": "^2.0.3",
+    "react-dom": "17.0.2",
+    "react-spinners": "^0.11.0",
+    "sass": "^1.44.0",
+    "swr": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "16.11.12",
+    "@types/react": "17.0.37",
+    "eslint": "8.4.1",
+    "eslint-config-next": "12.0.7",
+    "typescript": "4.5.3"
+  }
+}
