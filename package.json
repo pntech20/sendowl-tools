@@ -8,10 +8,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/minio": "^7.0.11",
     "@types/react-csv": "^1.1.2",
     "axios": "^1.4.0",
-    "minio": "^7.0.25",
     "next": "12.0.7",
     "rc-table": "^7.21.0",
     "react": "17.0.2",

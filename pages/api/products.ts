@@ -112,7 +112,7 @@ export default async function handler(
       },
     ];
 
-    const rows = rs.data.map((item) => ({
+    const rows = rs.data.map((item: any) => ({
       ...item.product,
       limit_to_single_qty_in_cart: item.product.limit_to_single_qty_in_cart
         ? "Yes"
