@@ -38,7 +38,7 @@ export default async function handler(
     try {
       const { sendOwlKey, sendOwlSecret } = req.query;
       const rs = await axios.get(
-        `https://${sendOwlKey}:${sendOwlSecret}@www.sendowl.com/api/v1/products`,
+        `https://${sendOwlKey}:${sendOwlSecret}@www.sendowl.com/api/v1/products?per_page=10000`,
         CONFIG
       );
       const products = rs.data;
@@ -56,10 +56,10 @@ export default async function handler(
   try {
     const { sendOwlKey, sendOwlSecret } = req.query;
     const rs = await axios.get(
-      `https://${sendOwlKey}:${sendOwlSecret}@www.sendowl.com/api/v1/products`,
+      `https://${sendOwlKey}:${sendOwlSecret}@www.sendowl.com/api/v1/products?per_page=10000`,
       CONFIG
     );
-
+    console.log(rs.data.length);
     const columns = [
       {
         dataIndex: "id",

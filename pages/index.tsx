@@ -21,7 +21,7 @@ const Index: NextPage = () => {
     if (sendOwlKey && sendOwlSecret) {
       return router.push(`/home?sendOwlKey=${sendOwlKey}&sendOwlSecret=${sendOwlSecret}`);
     }
-    alert("Please fill in S3 keys");
+    alert("Please fill in SendOwl credentials");
   };
 
   const rendeForm = () => (

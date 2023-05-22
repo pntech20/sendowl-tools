@@ -1,5 +1,5 @@
 {
-  "name": "s3-management",
+  "name": "sendowl-tools",
   "private": true,
   "scripts": {
     "dev": "next dev",
