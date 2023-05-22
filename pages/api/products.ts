@@ -43,9 +43,16 @@ export default async function handler(
       );
       const products = rs.data;
 
-      for (const item of products) {
-        await updateProduct(sendOwlKey, sendOwlSecret, item.product.id);
-      }
+      await Promise.all(
+        products.map((item: any) =>
+          updateProduct(sendOwlKey, sendOwlSecret, item.product.id)
+        )
+      );
+
+      // 504 error when doing this way
+      // for (const item of products) {
+      //   await updateProduct(sendOwlKey, sendOwlSecret, item.product.id);
+      // }
       return res.status(200).json({
         success: true,
         data: "Success",
